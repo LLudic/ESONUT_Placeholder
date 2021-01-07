@@ -1,0 +1,45 @@
+body
+{
+	background-image: url('BG_Placeholder2.png');
+	background-size: 2600px 1300px;
+	background-repeat: no-repeat;
+}
+
+.logo
+{
+	max-width:430px;
+ 	max-height:430px;	
+	display: block;
+	margin: 360px auto 360px auto;	
+	-webkit-animation: spin 1s linear infinite;
+	-miz-animation: spin 1s linear infinite;
+	animation: spin 9s linear infinite;
+}	
+
+.logo:hover
+{
+	-webkit-transform: rotate(360deg) translateZ(0);
+}
+
+
+@-webkit-keyframes spin
+{
+	100%{-webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes spin
+{
+	100%{-wenkit-transform: rotate(360deg);}
+}
+@keyframes spin
+{
+	100%{-webkit-transform: rotate(360deg);}
+}
+
+img 
+{
+	color: white;
+	max-width; 45px;
+	max-height: 45px;
+	display: block;	
+	margin: -365px auto -365px auto;	
+}
