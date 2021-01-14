@@ -37,7 +37,7 @@ div.vertical {
 }
 
 
-img {
+#image_logo {
 	width: 65%;
 	height: 100%;
 	-webkit-animation:spin 4s linear infinite;
@@ -60,6 +60,18 @@ img {
         transform:rotate(360deg);
     }
 }
+
+
+
+
+#font 
+{
+	width: 50%;
+	height: 50%;
+}
+
+
+
 
 
 
