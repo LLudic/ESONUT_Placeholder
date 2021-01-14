@@ -1,45 +1,75 @@
-body
+
+*
 {
-	background-image: url('BG_Placeholder2.png');
-	background-size: 2600px 1300px;
+	margin: 0;
+	padding: 0;
+}
+
+
+html, body
+{
+	height: 100%
+}
+
+
+.container
+{
+	height: 100%;
+	background: url("BG_Placeholder2.png");
+	background-position: center; 
+	background-attachment: fixed; 
 	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-.logo
-{
-	max-width:430px;
- 	max-height:430px;	
-	display: block;
-	margin: 360px auto 360px auto;	
-	-webkit-animation: spin 1s linear infinite;
-	-miz-animation: spin 1s linear infinite;
-	animation: spin 9s linear infinite;
-}	
+div.horizontal {
+    display: flex;
+    justify-content: center;
+	align-items: center;
+}
 
-.logo:hover
-{
-	-webkit-transform: rotate(360deg) translateZ(0);
+div.vertical {
+    margin-top: 13%;
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+	align-items: center;
 }
 
 
-@-webkit-keyframes spin
-{
-	100%{-webkit-transform: rotate(360deg);}
-}
-@-moz-keyframes spin
-{
-	100%{-wenkit-transform: rotate(360deg);}
-}
-@keyframes spin
-{
-	100%{-webkit-transform: rotate(360deg);}
+img {
+	width: 65%;
+	height: 100%;
+	-webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 9s linear infinite;
 }
 
-img 
-{
-	color: white;
-	max-width; 45px;
-	max-height: 45px;
-	display: block;	
-	margin: -365px auto -365px auto;	
+
+@-moz-keyframes spin {
+    100% {-moz-transform: rotate(360deg);}
 }
+
+@-webkit-keyframes spin {
+    100% {-webkit-transform: rotate(360deg);}
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform:rotate(360deg);
+    }
+}
+
+
+
+/*
+.container span 
+{
+	padding: 10px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); 
+}
+*/
